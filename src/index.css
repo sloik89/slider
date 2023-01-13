@@ -12,3 +12,75 @@ a {
   text-decoration: none;
   color: black;
 }
+img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0px 0px 18px 0px rgba(14, 14, 14, 1);
+  border: 4px solid orange;
+}
+.title {
+  font-size: 3rem;
+  margin: 4rem 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.section-center {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 50vh;
+  max-width: 700px;
+  overflow: hidden;
+}
+article {
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.active-slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+.next-slide {
+  transform: translateX(100%);
+}
+.last-slide {
+  transform: translateX(-100%);
+}
+article h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+article p {
+  margin-bottom: 1rem;
+}
+.icon {
+  font-size: 4rem;
+  color: orange;
+}
+.person-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(180, 173, 173);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-right {
+  right: 0;
+}
